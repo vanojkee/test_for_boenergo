@@ -3,13 +3,11 @@ import random
 
 
 class ColorItems:
-    total_dict: dict[int: str] = {}
-
     def __init__(self):
-
         self.blue: int = random.randint(70, 75)
         self.green: int = 90 - self.blue
         self.red: int = 10
+        self.total_dict: dict[int: str] = {}
 
         blue: int = self.blue
         green: int = self.green
